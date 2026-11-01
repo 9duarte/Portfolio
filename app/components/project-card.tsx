@@ -1,38 +1,30 @@
-import Image from "next/image";
 import { portfolioData, type PortfolioProject } from "../data/portfolio";
-import { TechIcon } from "./tech-icon";
+import { ProjectImagePreview } from "./project-image-preview";
+import { TechnologyList } from "./technology-list";
 
 export function ProjectCard({ project }: { project: PortfolioProject }) {
     return (
-        <article className="project-feature" id={`project-${project.number}`}>
-            <div className="project-visual">
-                <Image
+        <article className={`project-feature${project.image ? "" : " project-feature--no-image"}`} id={`project-${project.slug}`}>
+            {project.image && (
+                <ProjectImagePreview
                     src={project.image}
-                    alt={project.imageAlt}
-                    width={1160}
-                    height={760}
-                    sizes="(max-width: 850px) 100vw, 56vw"
+                    alt={project.imageAlt ?? project.name}
+                    name={project.name}
                 />
-            </div>
+            )}
             <div className="project-information">
-                <div className="project-number"><span>{project.number}</span><i /></div>
                 <h3>{project.name}</h3>
                 <p className="project-category">{project.category}</p>
                 <p className="project-description">{project.description}</p>
-                <ul className="project-technologies" aria-label={`Tecnologias usadas em ${project.name}`}>
-                    {project.technologies.map((name) => {
-                        const technology = portfolioData.technologies.find((item) => item.name === name);
-                        if (!technology) return <li key={name}>{name}</li>;
-
-                        return (
-                            <li key={name}>
-                                <TechIcon icon={technology.icon} />
-                                <span>{name}</span>
-                            </li>
-                        );
-                    })}
-                </ul>
-                <span className="project-link">{portfolioData.projectLinkLabel} <span aria-hidden="true">↗</span></span>
+                <TechnologyList
+                    technologies={project.technologies}
+                    label={`Tecnologias usadas em ${project.name}`}
+                />
+                {project.url && (
+                    <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
+                        {portfolioData.projectLinkLabel} <span aria-hidden="true">↗</span>
+                    </a>
+                )}
             </div>
         </article>
     );

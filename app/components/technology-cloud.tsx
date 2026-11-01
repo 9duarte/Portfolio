@@ -15,7 +15,6 @@ export function TechnologyCloud() {
           style={{
             left: technology.left,
             top: technology.top,
-            rotate: technology.rotation,
             scale: technology.scale,
           }}
         >
