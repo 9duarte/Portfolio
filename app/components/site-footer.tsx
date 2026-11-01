@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <p className="footer-copyright">{portfolioData.footerCopyright}</p>
-      <nav className="footer-socials" aria-label="Contactos e redes sociais">
+      <nav className="footer-socials" aria-label="Contact and social links">
         {portfolioData.contactLinks.map((contact) => (
           <a
             key={contact.label}

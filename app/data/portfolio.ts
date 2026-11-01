@@ -66,7 +66,6 @@ export type Experience = {
 export const technologyIconByName: Record<string, TechnologyIcon> = {
     React: "react",
     "Next.js": "next",
-    Next: "next",
     TypeScript: "typescript",
     JavaScript: "javascript",
     PHP: "php",
@@ -86,7 +85,6 @@ export const technologyIconByName: Record<string, TechnologyIcon> = {
     Prettier: "prettier",
     npm: "npm",
     Vercel: "vercel",
-    Tailwind: "tailwind",
     "Tailwind CSS": "tailwind",
     Angular: "angular",
     Java: "java",
@@ -97,23 +95,23 @@ export const technologyIconByName: Record<string, TechnologyIcon> = {
 };
 
 export const portfolioData = {
-    pageTitle: "Duarte Marques — Portfólio",
+    pageTitle: "Duarte Marques — Portfolio",
     pageDescription:
-        "Desenvolvedor de software em Portugal. Aplicações web, sistemas de gestão e produtos digitais.",
+        "Software developer in Portugal. Web applications, management systems, and digital products.",
 
     name: "Duarte Marques",
 
     description: [
         "I'm a Software Developer passionate about building web applications and digital solutions that solve real-world problems. I've worked on projects for businesses and individuals, developing solutions that are actively used in real-world environments.",
-        "I enjoy exploring new technologies, understanding how things work under the hood, and turning ideas into meaningful products. I'm always looking to challenge myself, learn something new, and become a better developer.."
+        "I enjoy exploring new technologies, understanding how things work under the hood, and turning ideas into meaningful products. I'm always looking to challenge myself, learn something new, and become a better developer."
     ],
 
-    projectLinkLabel: "Ver projeto",
+    projectLinkLabel: "View project",
     projectsTitle: "PROJECTS",
 
     experienceTitle: "EXPERIENCE",
     experiencePlaceholder:
-        "Experiência prática em desenvolvimento web, através de projetos reais e estágio profissional.",
+        "Practical experience in web development through real-world projects and professional internships.",
 
     footerCopyright:
         "© 2026 DUARTE MARQUES. ALL RIGHTS RESERVED.",
@@ -360,11 +358,29 @@ export const portfolioData = {
             ]
         },
         {
+            slug: "duarte-marques-portfolio",
+            name: "Portfolio",
+            category: "Website / Personal Portfolio",
+            description:
+                "A personal portfolio website designed to showcase my projects, experience, and technical skills through a modern, responsive, and interactive interface.",
+            image: "/Portfolio.png",
+            imageAlt:
+                "Portfolio",
+            technologies: [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            url: "https://9duarte.dev",
+        },
+        
+        {
             slug: "onemarket",
             name: "OneMarket",
             category: "ERP / Business Management",
             description:
-                "A business management platform developed as part of my Professional Aptitude Project (PAP), designed to centralize project management, budgets, work plans, and inventory. Provides an integrated solution to simplify business operations and improve workflow organization..",
+                "A business management platform developed as part of my Professional Aptitude Project (PAP), designed to centralize project management, budgets, work plans, and inventory. Provides an integrated solution to simplify business operations and improve workflow organization.",
             image: "/OneMarket.png",
             imageAlt:
                 "OneMarket",
@@ -376,20 +392,7 @@ export const portfolioData = {
                 "MySQL"
             ]
         },
-        {
-            slug: "coworking-management",
-            name: "Coworking Management",
-            category: "Full Stack / Management System",
-            description:
-                "Aplicação web para gestão de espaços de coworking, desenvolvida no âmbito académico. Inclui funcionalidades de gestão e reserva de espaços, com comunicação entre frontend e backend através de uma API REST.",
-            technologies: [
-                "React",
-                "TypeScript",
-                "Node.js",
-                "Express",
-                "MongoDB"
-            ]
-        }
+
     ] satisfies PortfolioProject[],
 
     experiences: [

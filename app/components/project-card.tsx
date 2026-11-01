@@ -18,7 +18,7 @@ export function ProjectCard({ project }: { project: PortfolioProject }) {
                 <p className="project-description">{project.description}</p>
                 <TechnologyList
                     technologies={project.technologies}
-                    label={`Tecnologias usadas em ${project.name}`}
+                    label={`Technologies used in ${project.name}`}
                 />
                 {project.url && (
                     <a className="project-link" href={project.url} target="_blank" rel="noreferrer">

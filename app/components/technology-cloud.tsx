@@ -3,7 +3,7 @@ import { TechIcon } from "./tech-icon";
 
 export function TechnologyCloud() {
   return (
-    <div className="technology-cloud" role="list" aria-label="Tecnologias e ferramentas">
+    <div className="technology-cloud" role="list" aria-label="Technologies and tools">
       <span className="cloud-cross cloud-cross--one" aria-hidden="true" />
       <span className="cloud-cross cloud-cross--two" aria-hidden="true" />
       <span className="cloud-cross cloud-cross--three" aria-hidden="true" />

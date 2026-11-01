@@ -14,7 +14,7 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
       <p className="experience-description">{experience.description}</p>
       <TechnologyList
         technologies={experience.technologies}
-        label={`Tecnologias usadas em ${experience.role}`}
+        label={`Technologies used in ${experience.role}`}
       />
     </article>
   );

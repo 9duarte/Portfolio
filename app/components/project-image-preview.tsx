@@ -28,7 +28,7 @@ export function ProjectImagePreview({
             <button
                 className="project-visual"
                 type="button"
-                aria-label={`Ampliar imagem: ${name}`}
+                aria-label={`Enlarge image: ${name}`}
                 onClick={() => setIsOpen(true)}
             >
                 <Image src={src} alt={alt} width={1280} height={720} sizes="(max-width: 850px) 100vw, 56vw" />
@@ -37,13 +37,13 @@ export function ProjectImagePreview({
             <dialog
                 ref={dialogRef}
                 className="image-lightbox"
-                aria-label={`Imagem ampliada: ${name}`}
+                aria-label={`Enlarged image: ${name}`}
                 onClose={() => setIsOpen(false)}
                 onClick={(event) => {
                     if (event.target === event.currentTarget) setIsOpen(false);
                 }}
             >
-                <button className="image-lightbox-close" type="button" aria-label="Fechar imagem" onClick={() => setIsOpen(false)}>
+                <button className="image-lightbox-close" type="button" aria-label="Close image" onClick={() => setIsOpen(false)}>
                     <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></svg>
                 </button>
                 <Image className="image-lightbox-image" src={src} alt={alt} width={1280} height={720} sizes="96vw" />

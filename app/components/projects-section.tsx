@@ -3,7 +3,7 @@ import { ProjectCard } from "./project-card";
 
 export function ProjectsSection() {
     return (
-        <section className="projects-section" id="projetos" aria-labelledby="projects-title">
+        <section className="projects-section" id="projects" aria-labelledby="projects-title">
             <div className="projects-heading">
                 <h2 id="projects-title">{portfolioData.projectsTitle}</h2>
                 <span className="heading-rule" />

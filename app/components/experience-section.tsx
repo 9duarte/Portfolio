@@ -3,7 +3,7 @@ import { ExperienceCard } from "./experience-card";
 
 export function ExperienceSection() {
   return (
-    <section className="experience-section" id="experiencia" aria-labelledby="experience-title">
+    <section className="experience-section" id="experience" aria-labelledby="experience-title">
       <div className="projects-heading experience-heading">
         <h2 id="experience-title">{portfolioData.experienceTitle}</h2>
         <span className="heading-rule" />
