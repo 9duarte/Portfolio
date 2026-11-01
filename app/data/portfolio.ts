@@ -44,6 +44,8 @@ export type PortfolioProject = {
     description: string;
     image?: string;
     imageAlt?: string;
+    imageWidth?: number;
+    imageHeight?: number;
     url?: string;
     technologies: string[];
 };
@@ -374,7 +376,25 @@ export const portfolioData = {
             ],
             url: "https://9duarte.dev",
         },
-        
+        {
+            slug: "lumassali",
+            name: "Lumassali",
+            category: "Digital Menu / Information System",
+            description:
+                "A digital display system developed for a bakery and pastry shop, designed to showcase product prices and provide useful information to customers. Combines a digital price list with real-time public transport updates, bringing different types of information together in a single, easy-to-use display.",
+            image: "/Lumassali.png",
+            imageAlt:
+                "Lumassali",
+            imageWidth: 1088,
+            imageHeight: 2120,
+            technologies: [
+                "PHP",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "MySQL"
+            ]
+        },
         {
             slug: "onemarket",
             name: "OneMarket",

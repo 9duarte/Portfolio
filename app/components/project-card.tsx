@@ -10,6 +10,8 @@ export function ProjectCard({ project }: { project: PortfolioProject }) {
                     src={project.image}
                     alt={project.imageAlt ?? project.name}
                     name={project.name}
+                    width={project.imageWidth ?? 1920}
+                    height={project.imageHeight ?? 1080}
                 />
             )}
             <div className="project-information">
