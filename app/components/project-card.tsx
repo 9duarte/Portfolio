@@ -1,4 +1,5 @@
 import { portfolioData, type PortfolioProject } from "../data/portfolio";
+import { ExternalLink } from "lucide-react";
 import { ProjectImagePreview } from "./project-image-preview";
 import { TechnologyList } from "./technology-list";
 
@@ -24,7 +25,8 @@ export function ProjectCard({ project }: { project: PortfolioProject }) {
                 />
                 {project.url && (
                     <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
-                        {portfolioData.projectLinkLabel} <span aria-hidden="true">↗</span>
+                        {portfolioData.projectLinkLabel}
+                        <ExternalLink className="project-link-icon" aria-hidden="true" size={15} strokeWidth={2} />
                     </a>
                 )}
             </div>
