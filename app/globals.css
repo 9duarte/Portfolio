@@ -183,7 +183,6 @@ a { color: inherit; text-decoration: none; }
 .technology-list .tech-icon { width: 21px; height: 21px; }
 .project-link { display: inline-flex; align-items: center; gap: 12px; padding: 3px 0 7px; border-bottom: 1px solid #354758; color: #eff3f7; font-size: 13px; }
 .project-link-icon { transition: translate 180ms ease; }
-.project-feature:hover .project-link-icon { translate: 3px -2px; }
 .experience-section { padding: 0 0 32px; }
 .experience-heading { margin-bottom: 8px; }
 .experience-list { display: grid; gap: 12px; }
