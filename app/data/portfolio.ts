@@ -355,8 +355,8 @@ export const portfolioData = {
                 "React",
                 "Node.js",
                 "Express",
-                "JavaScript",
-                "CSS"
+                "TypeScript",
+                "Tailwind CSS"
             ]
         },
         {
